@@ -51,12 +51,16 @@ local KEYBINGN = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
 local TextLabel_5 = Instance.new("TextLabel")
 local UIGradient_5 = Instance.new("UIGradient")
-local H = Instance.new("Frame")
-local TextLabel_6 = Instance.new("TextLabel")
-local ImageLabel = Instance.new("ImageLabel")
+local God = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
-local TextButton_9 = Instance.new("TextButton")
+local TextLabel_6 = Instance.new("TextLabel")
+local UIGradient_6 = Instance.new("UIGradient")
+local H = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
 local UICorner_17 = Instance.new("UICorner")
+local TextButton_9 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
 
 --Properties:
 
@@ -213,7 +217,6 @@ C.BorderColor3 = Color3.fromRGB(255, 255, 255)
 C.BorderSizePixel = 0
 C.Position = UDim2.new(0.233384654, 0, 0.0390069224, 0)
 C.Size = UDim2.new(0, 381, 0, 230)
-C.Visible = false
 C.CanvasSize = UDim2.new(0, 0, 10, 0)
 C.ScrollBarThickness = 0
 
@@ -377,23 +380,53 @@ TextLabel_5.TextWrapped = true
 UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
 UIGradient_5.Parent = TextLabel_5
 
+God.Name = "God"
+God.Parent = C
+God.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+God.Position = UDim2.new(0, 0, 0.365028322, 0)
+God.Size = UDim2.new(0, 376, 0, 24)
+God.Font = Enum.Font.SourceSans
+God.Text = "keyBind Noclip"
+God.TextColor3 = Color3.fromRGB(0, 0, 0)
+God.TextSize = 14.000
+God.TextTransparency = 1.000
+God.TextWrapped = true
+
+UICorner_16.Parent = God
+
+TextLabel_6.Parent = God
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(-0.00658043381, 0, 0.156840011, 0)
+TextLabel_6.Size = UDim2.new(0, 99, 0, 16)
+TextLabel_6.Font = Enum.Font.GothamBold
+TextLabel_6.Text = "GodMode"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_6.Parent = TextLabel_6
+
 H.Name = "H"
 H.Parent = MAIN
 H.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 H.BorderSizePixel = 0
 H.Position = UDim2.new(0.232999995, 0, 0.0390000008, 0)
 H.Size = UDim2.new(0, 381, 0, 230)
+H.Visible = false
 
-TextLabel_6.Parent = H
-TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.BackgroundTransparency = 1.000
-TextLabel_6.Position = UDim2.new(0.0399999991, 0, 0.453846276, 0)
-TextLabel_6.Size = UDim2.new(0, 92, 0, 50)
-TextLabel_6.Font = Enum.Font.GothamSemibold
-TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_6.TextScaled = true
-TextLabel_6.TextSize = 28.000
-TextLabel_6.TextWrapped = true
+TextLabel_7.Parent = H
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.0399999991, 0, 0.453846276, 0)
+TextLabel_7.Size = UDim2.new(0, 92, 0, 50)
+TextLabel_7.Font = Enum.Font.GothamSemibold
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextScaled = true
+TextLabel_7.TextSize = 28.000
+TextLabel_7.TextWrapped = true
 
 ImageLabel.Parent = H
 ImageLabel.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
@@ -403,7 +436,7 @@ ImageLabel.Position = UDim2.new(0.0222222209, 0, 0.0461538471, 0)
 ImageLabel.Size = UDim2.new(0, 100, 0, 100)
 ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UICorner_16.Parent = ImageLabel
+UICorner_17.Parent = ImageLabel
 
 TextButton_9.Parent = H
 TextButton_9.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
@@ -415,12 +448,12 @@ TextButton_9.Text = "JoinDiscord"
 TextButton_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_9.TextSize = 20.000
 
-UICorner_17.CornerRadius = UDim.new(0, 5)
-UICorner_17.Parent = TextButton_9
+UICorner_18.CornerRadius = UDim.new(0, 5)
+UICorner_18.Parent = TextButton_9
 
 -- Scripts:
 
-local function FVAW_fake_script() -- TextButton.LocalScript 
+local function TOMNUVM_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -435,8 +468,8 @@ local function FVAW_fake_script() -- TextButton.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(FVAW_fake_script)()
-local function HXCXYQB_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(TOMNUVM_fake_script)()
+local function PEAGCDD_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -451,8 +484,8 @@ local function HXCXYQB_fake_script() -- TextButton_2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(HXCXYQB_fake_script)()
-local function FDMZ_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(PEAGCDD_fake_script)()
+local function MVKL_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -467,8 +500,8 @@ local function FDMZ_fake_script() -- TextButton_3.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(FDMZ_fake_script)()
-local function NFWWF_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(MVKL_fake_script)()
+local function WWFZL_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -483,8 +516,8 @@ local function NFWWF_fake_script() -- TextButton_4.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(NFWWF_fake_script)()
-local function MJIG_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(WWFZL_fake_script)()
+local function VSGYNC_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -499,8 +532,8 @@ local function MJIG_fake_script() -- TextButton_5.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(MJIG_fake_script)()
-local function NEFPTBX_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(VSGYNC_fake_script)()
+local function KCMSTJO_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -515,8 +548,8 @@ local function NEFPTBX_fake_script() -- TextButton_6.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(NEFPTBX_fake_script)()
-local function CAJOANG_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(KCMSTJO_fake_script)()
+local function LAYMI_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -531,8 +564,8 @@ local function CAJOANG_fake_script() -- TextButton_7.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(CAJOANG_fake_script)()
-local function BYBHH_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(LAYMI_fake_script)()
+local function IUYB_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -547,8 +580,8 @@ local function BYBHH_fake_script() -- TextButton_8.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(BYBHH_fake_script)()
-local function BIMXWM_fake_script() -- search.LocalScript 
+coroutine.wrap(IUYB_fake_script)()
+local function KGXATN_fake_script() -- search.LocalScript 
 	local script = Instance.new('LocalScript', search)
 
 	local scroll = script.Parent.Parent.Parent.C-- CHANGE THIS TO YOUR SCROLLING FRAME
@@ -579,8 +612,8 @@ local function BIMXWM_fake_script() -- search.LocalScript
 	end)
 	
 end
-coroutine.wrap(BIMXWM_fake_script)()
-local function FTFGPA_fake_script() -- Fly.LocalScript 
+coroutine.wrap(KGXATN_fake_script)()
+local function HGICJJZ_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -676,8 +709,8 @@ local function FTFGPA_fake_script() -- Fly.LocalScript
 	end)
 	
 end
-coroutine.wrap(FTFGPA_fake_script)()
-local function OFPLNWC_fake_script() -- CTP.LocalScript 
+coroutine.wrap(HGICJJZ_fake_script)()
+local function PMFG_fake_script() -- CTP.LocalScript 
 	local script = Instance.new('LocalScript', CTP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -704,8 +737,8 @@ local function OFPLNWC_fake_script() -- CTP.LocalScript
 	end)
 	
 end
-coroutine.wrap(OFPLNWC_fake_script)()
-local function LLUW_fake_script() -- INFJUMP.LocalScript 
+coroutine.wrap(PMFG_fake_script)()
+local function ZEUTOD_fake_script() -- INFJUMP.LocalScript 
 	local script = Instance.new('LocalScript', INFJUMP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -730,8 +763,8 @@ local function LLUW_fake_script() -- INFJUMP.LocalScript
 	end)
 	
 end
-coroutine.wrap(LLUW_fake_script)()
-local function WRFKU_fake_script() -- KEYBINGN.LocalScript 
+coroutine.wrap(ZEUTOD_fake_script)()
+local function HCPWWQ_fake_script() -- KEYBINGN.LocalScript 
 	local script = Instance.new('LocalScript', KEYBINGN)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -759,8 +792,17 @@ local function WRFKU_fake_script() -- KEYBINGN.LocalScript
 	end)
 	
 end
-coroutine.wrap(WRFKU_fake_script)()
-local function OUTCN_fake_script() -- MAIN.Drag 
+coroutine.wrap(HCPWWQ_fake_script)()
+local function WOMSWH_fake_script() -- God.LocalScript 
+	local script = Instance.new('LocalScript', God)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Workspace.Skiiii990.Humanoid.MaxHealth = math.huge
+	end)
+	
+end
+coroutine.wrap(WOMSWH_fake_script)()
+local function VFNLTV_fake_script() -- MAIN.Drag 
 	local script = Instance.new('LocalScript', MAIN)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -803,15 +845,15 @@ local function OUTCN_fake_script() -- MAIN.Drag
 		end
 	end)
 end
-coroutine.wrap(OUTCN_fake_script)()
-local function UYEPGRD_fake_script() -- TextLabel_6.LocalScript 
-	local script = Instance.new('LocalScript', TextLabel_6)
+coroutine.wrap(VFNLTV_fake_script)()
+local function KENAYK_fake_script() -- TextLabel_7.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_7)
 
 	script.Parent.Text = game.Players.LocalPlayer.Name
 	
 end
-coroutine.wrap(UYEPGRD_fake_script)()
-local function GOQB_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(KENAYK_fake_script)()
+local function CKBHA_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local Players = game:GetService("Players")
@@ -827,8 +869,8 @@ local function GOQB_fake_script() -- ImageLabel.LocalScript
 	imageLabel.Image = content
 	
 end
-coroutine.wrap(GOQB_fake_script)()
-local function VBAFLR_fake_script() -- MAIN.LocalScript 
+coroutine.wrap(CKBHA_fake_script)()
+local function VNJWIJ_fake_script() -- MAIN.LocalScript 
 	local script = Instance.new('LocalScript', MAIN)
 
 	game.StarterGui:SetCore("SendNotification",{
@@ -838,4 +880,4 @@ local function VBAFLR_fake_script() -- MAIN.LocalScript
 		Duration = 2
 	})
 end
-coroutine.wrap(VBAFLR_fake_script)()
+coroutine.wrap(VNJWIJ_fake_script)()
