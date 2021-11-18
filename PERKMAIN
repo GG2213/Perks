@@ -87,6 +87,12 @@ local SEATS = Instance.new("TextButton")
 local UICorner_27 = Instance.new("UICorner")
 local TextLabel_10 = Instance.new("TextLabel")
 local UIGradient_9 = Instance.new("UIGradient")
+local FOV = Instance.new("TextButton")
+local UICorner_28 = Instance.new("UICorner")
+local TextLabel_11 = Instance.new("TextLabel")
+local UIGradient_10 = Instance.new("UIGradient")
+local fov = Instance.new("TextBox")
+local UICorner_29 = Instance.new("UICorner")
 
 --Properties:
 
@@ -372,6 +378,7 @@ H.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 H.BorderSizePixel = 0
 H.Position = UDim2.new(0.232999995, 0, 0.0390000008, 0)
 H.Size = UDim2.new(0, 381, 0, 230)
+H.Visible = false
 
 TextLabel_4.Parent = H
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -416,7 +423,6 @@ C.BorderColor3 = Color3.fromRGB(255, 255, 255)
 C.BorderSizePixel = 0
 C.Position = UDim2.new(0.233384654, 0, 0.0390069224, 0)
 C.Size = UDim2.new(0, 387, 0, 236)
-C.Visible = false
 C.CanvasSize = UDim2.new(0, 0, 10, 0)
 C.ScrollBarThickness = 0
 
@@ -630,7 +636,7 @@ SEATS.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
 SEATS.Position = UDim2.new(0, 0, 0.365028322, 0)
 SEATS.Size = UDim2.new(0, 376, 0, 24)
 SEATS.Font = Enum.Font.SourceSans
-SEATS.Text = "infJump"
+SEATS.Text = "disableseats"
 SEATS.TextColor3 = Color3.fromRGB(0, 0, 0)
 SEATS.TextSize = 14.000
 SEATS.TextTransparency = 1.000
@@ -653,9 +659,53 @@ TextLabel_10.TextWrapped = true
 UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
 UIGradient_9.Parent = TextLabel_10
 
+FOV.Name = "FOV"
+FOV.Parent = C
+FOV.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+FOV.Position = UDim2.new(0, 0, 0.365028322, 0)
+FOV.Size = UDim2.new(0, 376, 0, 24)
+FOV.Font = Enum.Font.SourceSans
+FOV.Text = "fov"
+FOV.TextColor3 = Color3.fromRGB(0, 0, 0)
+FOV.TextSize = 14.000
+FOV.TextTransparency = 1.000
+FOV.TextWrapped = true
+
+UICorner_28.Parent = FOV
+
+TextLabel_11.Parent = FOV
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.0200153105, 0, 0.281839997, 0)
+TextLabel_11.Size = UDim2.new(0, 31, 0, 16)
+TextLabel_11.Font = Enum.Font.GothamBold
+TextLabel_11.Text = "FOV"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextScaled = true
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_10.Parent = TextLabel_11
+
+fov.Name = "fov"
+fov.Parent = FOV
+fov.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+fov.Position = UDim2.new(0.615829766, 0, 0.17857106, 0)
+fov.Size = UDim2.new(0, 132, 0, 17)
+fov.Font = Enum.Font.SourceSans
+fov.PlaceholderText = "SetFov"
+fov.Text = ""
+fov.TextColor3 = Color3.fromRGB(255, 255, 255)
+fov.TextSize = 14.000
+fov.TextWrapped = true
+
+UICorner_29.CornerRadius = UDim.new(0, 4)
+UICorner_29.Parent = fov
+
 -- Scripts:
 
-local function MYTUYV_fake_script() -- TextButton.LocalScript 
+local function LUSY_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -670,8 +720,8 @@ local function MYTUYV_fake_script() -- TextButton.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(MYTUYV_fake_script)()
-local function ERCMP_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(LUSY_fake_script)()
+local function YQLJX_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -686,8 +736,8 @@ local function ERCMP_fake_script() -- TextButton_2.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(ERCMP_fake_script)()
-local function CEJIUYA_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(YQLJX_fake_script)()
+local function ZQGJNV_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -702,8 +752,8 @@ local function CEJIUYA_fake_script() -- TextButton_3.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(CEJIUYA_fake_script)()
-local function XQEEXI_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(ZQGJNV_fake_script)()
+local function XHFKXV_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -718,8 +768,8 @@ local function XQEEXI_fake_script() -- TextButton_4.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(XQEEXI_fake_script)()
-local function BOSR_fake_script() -- TextButton_5.LocalScript 
+coroutine.wrap(XHFKXV_fake_script)()
+local function JDKVQ_fake_script() -- TextButton_5.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -734,8 +784,8 @@ local function BOSR_fake_script() -- TextButton_5.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(BOSR_fake_script)()
-local function WRDYILN_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(JDKVQ_fake_script)()
+local function VDWDBHP_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -750,8 +800,8 @@ local function WRDYILN_fake_script() -- TextButton_6.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(WRDYILN_fake_script)()
-local function MWIJTP_fake_script() -- TextButton_7.LocalScript 
+coroutine.wrap(VDWDBHP_fake_script)()
+local function TRKSE_fake_script() -- TextButton_7.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -766,8 +816,8 @@ local function MWIJTP_fake_script() -- TextButton_7.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(MWIJTP_fake_script)()
-local function XMBXF_fake_script() -- TextButton_8.LocalScript 
+coroutine.wrap(TRKSE_fake_script)()
+local function WUUGV_fake_script() -- TextButton_8.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -782,8 +832,8 @@ local function XMBXF_fake_script() -- TextButton_8.LocalScript
 		wait(0.1)
 	end)
 end
-coroutine.wrap(XMBXF_fake_script)()
-local function CQWPVU_fake_script() -- search.LocalScript 
+coroutine.wrap(WUUGV_fake_script)()
+local function WWJR_fake_script() -- search.LocalScript 
 	local script = Instance.new('LocalScript', search)
 
 	local scroll = script.Parent.Parent.Parent.C-- CHANGE THIS TO YOUR SCROLLING FRAME
@@ -814,8 +864,8 @@ local function CQWPVU_fake_script() -- search.LocalScript
 	end)
 	
 end
-coroutine.wrap(CQWPVU_fake_script)()
-local function YPST_fake_script() -- AntiStomp.LocalScript 
+coroutine.wrap(WWJR_fake_script)()
+local function FDRGX_fake_script() -- AntiStomp.LocalScript 
 	local script = Instance.new('LocalScript', AntiStomp)
 
 	local stomp = pcall(function() if tostring(game.PlaceId) == "2788229376" then local corepackages = game:GetService"CorePackages" local localplayer = game:GetService"Players".LocalPlayer local run = game:GetService"RunService" run:BindToRenderStep("rrrrrrrrrrr",2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 30 then localplayer.Character.Humanoid:UnequipTools() localplayer.Character.Humanoid:Destroy() workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then ReplicatedStorage:FireServer("Stomp") end end) end) 
@@ -844,8 +894,8 @@ local function YPST_fake_script() -- AntiStomp.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YPST_fake_script)()
-local function VQATFH_fake_script() -- View.LocalScript 
+coroutine.wrap(FDRGX_fake_script)()
+local function AWJZLBA_fake_script() -- View.LocalScript 
 	local script = Instance.new('LocalScript', View)
 
 	local function ShrinkName()
@@ -896,8 +946,8 @@ local function VQATFH_fake_script() -- View.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VQATFH_fake_script)()
-local function ODWBSP_fake_script() -- MAIN.Drag 
+coroutine.wrap(AWJZLBA_fake_script)()
+local function TPNS_fake_script() -- MAIN.Drag 
 	local script = Instance.new('LocalScript', MAIN)
 
 	local UIS = game:GetService('UserInputService')
@@ -936,15 +986,15 @@ local function ODWBSP_fake_script() -- MAIN.Drag
 	end)
 	
 end
-coroutine.wrap(ODWBSP_fake_script)()
-local function BPYGENS_fake_script() -- TextLabel_4.LocalScript 
+coroutine.wrap(TPNS_fake_script)()
+local function LEQT_fake_script() -- TextLabel_4.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_4)
 
 	script.Parent.Text = game.Players.LocalPlayer.Name
 	
 end
-coroutine.wrap(BPYGENS_fake_script)()
-local function THWRVQ_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(LEQT_fake_script)()
+local function WREACHC_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local Players = game:GetService("Players")
@@ -960,8 +1010,8 @@ local function THWRVQ_fake_script() -- ImageLabel.LocalScript
 	imageLabel.Image = content
 	
 end
-coroutine.wrap(THWRVQ_fake_script)()
-local function OZKCNKH_fake_script() -- MAIN.LocalScript 
+coroutine.wrap(WREACHC_fake_script)()
+local function CFWUDQE_fake_script() -- MAIN.LocalScript 
 	local script = Instance.new('LocalScript', MAIN)
 
 	game.StarterGui:SetCore("SendNotification",{
@@ -971,8 +1021,8 @@ local function OZKCNKH_fake_script() -- MAIN.LocalScript
 		Duration = 2
 	})
 end
-coroutine.wrap(OZKCNKH_fake_script)()
-local function RIKBXIT_fake_script() -- search_2.LocalScript 
+coroutine.wrap(CFWUDQE_fake_script)()
+local function ATFJ_fake_script() -- search_2.LocalScript 
 	local script = Instance.new('LocalScript', search_2)
 
 	local scroll = script.Parent.Parent.Parent.C-- CHANGE THIS TO YOUR SCROLLING FRAME
@@ -1003,8 +1053,8 @@ local function RIKBXIT_fake_script() -- search_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(RIKBXIT_fake_script)()
-local function VBSHYPP_fake_script() -- Fly.LocalScript 
+coroutine.wrap(ATFJ_fake_script)()
+local function UHGZF_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1100,8 +1150,8 @@ local function VBSHYPP_fake_script() -- Fly.LocalScript
 	end)
 	
 end
-coroutine.wrap(VBSHYPP_fake_script)()
-local function ZLFX_fake_script() -- CTP.LocalScript 
+coroutine.wrap(UHGZF_fake_script)()
+local function ESWGD_fake_script() -- CTP.LocalScript 
 	local script = Instance.new('LocalScript', CTP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1128,8 +1178,8 @@ local function ZLFX_fake_script() -- CTP.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZLFX_fake_script)()
-local function HCNFR_fake_script() -- INFJUMP.LocalScript 
+coroutine.wrap(ESWGD_fake_script)()
+local function JFFYS_fake_script() -- INFJUMP.LocalScript 
 	local script = Instance.new('LocalScript', INFJUMP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1154,8 +1204,8 @@ local function HCNFR_fake_script() -- INFJUMP.LocalScript
 	end)
 	
 end
-coroutine.wrap(HCNFR_fake_script)()
-local function ZNMK_fake_script() -- GoTo.LocalScript 
+coroutine.wrap(JFFYS_fake_script)()
+local function NNAW_fake_script() -- GoTo.LocalScript 
 	local script = Instance.new('LocalScript', GoTo)
 
 	local function ShrinkName()
@@ -1186,8 +1236,8 @@ local function ZNMK_fake_script() -- GoTo.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[TargetPlr].Character.HumanoidRootPart.CFrame 
 	end)
 end
-coroutine.wrap(ZNMK_fake_script)()
-local function WBKOGI_fake_script() -- SEATS.LocalScript 
+coroutine.wrap(NNAW_fake_script)()
+local function TIJXBT_fake_script() -- SEATS.LocalScript 
 	local script = Instance.new('LocalScript', SEATS)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1204,11 +1254,29 @@ local function WBKOGI_fake_script() -- SEATS.LocalScript
 	end)
 	
 end
-coroutine.wrap(WBKOGI_fake_script)()
-local function BDXLPH_fake_script() -- MAIN.LocalScript 
+coroutine.wrap(TIJXBT_fake_script)()
+local function SMTWYZC_fake_script() -- FOV.LocalScript 
+	local script = Instance.new('LocalScript', FOV)
+
+	local Camera = workspace:FindFirstChildOfClass("Camera")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		game.StarterGui:SetCore("SendNotification",{
+			Title = "PERKS",
+			Text = "FOV Set",
+			icon = "rbxassetid://7072708278",
+			Duration = 2
+		})
+		Camera.FieldOfView = script.Parent.fov.Text
+	end)
+	
+	
+end
+coroutine.wrap(SMTWYZC_fake_script)()
+local function SPMGP_fake_script() -- MAIN.LocalScript 
 	local script = Instance.new('LocalScript', MAIN)
 
 	print("Hello world!")
 	
 end
-coroutine.wrap(BDXLPH_fake_script)()
+coroutine.wrap(SPMGP_fake_script)()
