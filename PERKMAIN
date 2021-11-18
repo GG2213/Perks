@@ -77,22 +77,78 @@ local KEYBINGN = Instance.new("TextButton")
 local UICorner_24 = Instance.new("UICorner")
 local TextLabel_8 = Instance.new("TextLabel")
 local UIGradient_7 = Instance.new("UIGradient")
-local GoTo = Instance.new("TextButton")
+local SEATS = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
 local TextLabel_9 = Instance.new("TextLabel")
 local UIGradient_8 = Instance.new("UIGradient")
-local Target_2 = Instance.new("TextBox")
+local NoSlow = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
-local SEATS = Instance.new("TextButton")
-local UICorner_27 = Instance.new("UICorner")
 local TextLabel_10 = Instance.new("TextLabel")
 local UIGradient_9 = Instance.new("UIGradient")
-local FOV = Instance.new("TextButton")
-local UICorner_28 = Instance.new("UICorner")
+local DisplayNames = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
 local TextLabel_11 = Instance.new("TextLabel")
 local UIGradient_10 = Instance.new("UIGradient")
-local fov = Instance.new("TextBox")
+local A = Instance.new("ScrollingFrame")
+local search_3 = Instance.new("Frame")
+local UICorner_28 = Instance.new("UICorner")
+local SearchText_3 = Instance.new("TextBox")
 local UICorner_29 = Instance.new("UICorner")
+local UIListLayout_4 = Instance.new("UIListLayout")
+local SMG = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
+local TextLabel_12 = Instance.new("TextLabel")
+local UIGradient_11 = Instance.new("UIGradient")
+local RPG = Instance.new("TextButton")
+local UICorner_31 = Instance.new("UICorner")
+local TextLabel_13 = Instance.new("TextLabel")
+local UIGradient_12 = Instance.new("UIGradient")
+local AK47 = Instance.new("TextButton")
+local UICorner_32 = Instance.new("UICorner")
+local TextLabel_14 = Instance.new("TextLabel")
+local UIGradient_13 = Instance.new("UIGradient")
+local REV = Instance.new("TextButton")
+local UICorner_33 = Instance.new("UICorner")
+local TextLabel_15 = Instance.new("TextLabel")
+local UIGradient_14 = Instance.new("UIGradient")
+local DB = Instance.new("TextButton")
+local UICorner_34 = Instance.new("UICorner")
+local TextLabel_16 = Instance.new("TextLabel")
+local UIGradient_15 = Instance.new("UIGradient")
+local LMG = Instance.new("TextButton")
+local UICorner_35 = Instance.new("UICorner")
+local TextLabel_17 = Instance.new("TextLabel")
+local UIGradient_16 = Instance.new("UIGradient")
+local FLAME = Instance.new("TextButton")
+local UICorner_36 = Instance.new("UICorner")
+local TextLabel_18 = Instance.new("TextLabel")
+local UIGradient_17 = Instance.new("UIGradient")
+local DRUM = Instance.new("TextButton")
+local UICorner_37 = Instance.new("UICorner")
+local TextLabel_19 = Instance.new("TextLabel")
+local UIGradient_18 = Instance.new("UIGradient")
+local BrownBag = Instance.new("TextButton")
+local UICorner_38 = Instance.new("UICorner")
+local TextLabel_20 = Instance.new("TextLabel")
+local UIGradient_19 = Instance.new("UIGradient")
+local TT = Instance.new("ScrollingFrame")
+local search_4 = Instance.new("Frame")
+local UICorner_39 = Instance.new("UICorner")
+local SearchText_4 = Instance.new("TextBox")
+local UICorner_40 = Instance.new("UICorner")
+local UIListLayout_5 = Instance.new("UIListLayout")
+local BAG = Instance.new("TextButton")
+local UICorner_41 = Instance.new("UICorner")
+local TextLabel_21 = Instance.new("TextLabel")
+local UIGradient_20 = Instance.new("UIGradient")
+local Target_2 = Instance.new("TextBox")
+local UICorner_42 = Instance.new("UICorner")
+local GoTo = Instance.new("TextButton")
+local UICorner_43 = Instance.new("UICorner")
+local TextLabel_22 = Instance.new("TextLabel")
+local UIGradient_21 = Instance.new("UIGradient")
+local Target_3 = Instance.new("TextBox")
+local UICorner_44 = Instance.new("UICorner")
 
 --Properties:
 
@@ -106,7 +162,7 @@ MAIN.Name = "MAIN"
 MAIN.Parent = Perk
 MAIN.BackgroundColor3 = Color3.fromRGB(7, 7, 7)
 MAIN.BorderSizePixel = 0
-MAIN.Position = UDim2.new(0.36566925, 0, 0.366863906, 0)
+MAIN.Position = UDim2.new(0.36362946, 0, 0.388560146, 0)
 MAIN.Size = UDim2.new(0, 505, 0, 246)
 
 header.Name = "header"
@@ -211,7 +267,7 @@ TextButton_6.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextButton_6.Position = UDim2.new(0.0800541267, 0, 0.838983059, 0)
 TextButton_6.Size = UDim2.new(0, 100, 0, 29)
 TextButton_6.Font = Enum.Font.GothamBold
-TextButton_6.Text = "Updates"
+TextButton_6.Text = "Target"
 TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_6.TextSize = 14.000
 
@@ -313,8 +369,8 @@ UIGradient_2.Parent = TextLabel_2
 Toggle1.Name = "Toggle1"
 Toggle1.Parent = AntiStomp
 Toggle1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Toggle1.Position = UDim2.new(0.678191483, 0, 0.198505402, 0)
-Toggle1.Size = UDim2.new(0, 109, 0, 15)
+Toggle1.Position = UDim2.new(0.723404229, 0, 0.198505402, 0)
+Toggle1.Size = UDim2.new(0, 91, 0, 15)
 
 UICorner_12.CornerRadius = UDim.new(0, 5)
 UICorner_12.Parent = Toggle1
@@ -378,7 +434,6 @@ H.BackgroundColor3 = Color3.fromRGB(26, 26, 26)
 H.BorderSizePixel = 0
 H.Position = UDim2.new(0.232999995, 0, 0.0390000008, 0)
 H.Size = UDim2.new(0, 381, 0, 230)
-H.Visible = false
 
 TextLabel_4.Parent = H
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -423,6 +478,7 @@ C.BorderColor3 = Color3.fromRGB(255, 255, 255)
 C.BorderSizePixel = 0
 C.Position = UDim2.new(0.233384654, 0, 0.0390069224, 0)
 C.Size = UDim2.new(0, 387, 0, 236)
+C.Visible = false
 C.CanvasSize = UDim2.new(0, 0, 10, 0)
 C.ScrollBarThickness = 0
 
@@ -586,50 +642,6 @@ TextLabel_8.TextWrapped = true
 UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
 UIGradient_7.Parent = TextLabel_8
 
-GoTo.Name = "GoTo"
-GoTo.Parent = C
-GoTo.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
-GoTo.Position = UDim2.new(0, 0, 0.365028322, 0)
-GoTo.Size = UDim2.new(0, 376, 0, 24)
-GoTo.Font = Enum.Font.SourceSans
-GoTo.Text = "goto"
-GoTo.TextColor3 = Color3.fromRGB(0, 0, 0)
-GoTo.TextSize = 14.000
-GoTo.TextTransparency = 1.000
-GoTo.TextWrapped = true
-
-UICorner_25.Parent = GoTo
-
-TextLabel_9.Parent = GoTo
-TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.BackgroundTransparency = 1.000
-TextLabel_9.Position = UDim2.new(0.0146961613, 0, 0.15683873, 0)
-TextLabel_9.Size = UDim2.new(0, 42, 0, 16)
-TextLabel_9.Font = Enum.Font.GothamBold
-TextLabel_9.Text = "Goto"
-TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_9.TextScaled = true
-TextLabel_9.TextSize = 14.000
-TextLabel_9.TextWrapped = true
-
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
-UIGradient_8.Parent = TextLabel_9
-
-Target_2.Name = "Target"
-Target_2.Parent = GoTo
-Target_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-Target_2.Position = UDim2.new(0.615829766, 0, 0.17857106, 0)
-Target_2.Size = UDim2.new(0, 132, 0, 17)
-Target_2.Font = Enum.Font.SourceSans
-Target_2.PlaceholderText = "Target"
-Target_2.Text = ""
-Target_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Target_2.TextSize = 14.000
-Target_2.TextWrapped = true
-
-UICorner_26.CornerRadius = UDim.new(0, 4)
-UICorner_26.Parent = Target_2
-
 SEATS.Name = "SEATS"
 SEATS.Parent = C
 SEATS.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
@@ -642,15 +654,44 @@ SEATS.TextSize = 14.000
 SEATS.TextTransparency = 1.000
 SEATS.TextWrapped = true
 
-UICorner_27.Parent = SEATS
+UICorner_25.Parent = SEATS
 
-TextLabel_10.Parent = SEATS
+TextLabel_9.Parent = SEATS
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.0132978726, 0, 0.156839997, 0)
+TextLabel_9.Size = UDim2.new(0, 102, 0, 16)
+TextLabel_9.Font = Enum.Font.GothamBold
+TextLabel_9.Text = "Disable Seats"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextScaled = true
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_8.Parent = TextLabel_9
+
+NoSlow.Name = "NoSlow"
+NoSlow.Parent = C
+NoSlow.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+NoSlow.Position = UDim2.new(-0.0465116277, 0, 0.364215314, 0)
+NoSlow.Size = UDim2.new(0, 376, 0, 24)
+NoSlow.Font = Enum.Font.SourceSans
+NoSlow.Text = "noslow"
+NoSlow.TextColor3 = Color3.fromRGB(0, 0, 0)
+NoSlow.TextSize = 14.000
+NoSlow.TextTransparency = 1.000
+NoSlow.TextWrapped = true
+
+UICorner_26.Parent = NoSlow
+
+TextLabel_10.Parent = NoSlow
 TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.BackgroundTransparency = 1.000
-TextLabel_10.Position = UDim2.new(0.0132978726, 0, 0.156839997, 0)
-TextLabel_10.Size = UDim2.new(0, 102, 0, 16)
+TextLabel_10.Position = UDim2.new(0.0132978726, 0, 0.156840011, 0)
+TextLabel_10.Size = UDim2.new(0, 67, 0, 16)
 TextLabel_10.Font = Enum.Font.GothamBold
-TextLabel_10.Text = "Disable Seats"
+TextLabel_10.Text = "NoSlow"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.TextScaled = true
 TextLabel_10.TextSize = 14.000
@@ -659,27 +700,27 @@ TextLabel_10.TextWrapped = true
 UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
 UIGradient_9.Parent = TextLabel_10
 
-FOV.Name = "FOV"
-FOV.Parent = C
-FOV.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
-FOV.Position = UDim2.new(0, 0, 0.365028322, 0)
-FOV.Size = UDim2.new(0, 376, 0, 24)
-FOV.Font = Enum.Font.SourceSans
-FOV.Text = "fov"
-FOV.TextColor3 = Color3.fromRGB(0, 0, 0)
-FOV.TextSize = 14.000
-FOV.TextTransparency = 1.000
-FOV.TextWrapped = true
+DisplayNames.Name = "DisplayNames"
+DisplayNames.Parent = C
+DisplayNames.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+DisplayNames.Position = UDim2.new(0, 0, 0.365028322, 0)
+DisplayNames.Size = UDim2.new(0, 376, 0, 24)
+DisplayNames.Font = Enum.Font.SourceSans
+DisplayNames.Text = "removedisplayname"
+DisplayNames.TextColor3 = Color3.fromRGB(0, 0, 0)
+DisplayNames.TextSize = 14.000
+DisplayNames.TextTransparency = 1.000
+DisplayNames.TextWrapped = true
 
-UICorner_28.Parent = FOV
+UICorner_27.Parent = DisplayNames
 
-TextLabel_11.Parent = FOV
+TextLabel_11.Parent = DisplayNames
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.BackgroundTransparency = 1.000
-TextLabel_11.Position = UDim2.new(0.0200153105, 0, 0.281839997, 0)
-TextLabel_11.Size = UDim2.new(0, 31, 0, 16)
+TextLabel_11.Position = UDim2.new(0.0132978726, 0, 0.156840011, 0)
+TextLabel_11.Size = UDim2.new(0, 143, 0, 16)
 TextLabel_11.Font = Enum.Font.GothamBold
-TextLabel_11.Text = "FOV"
+TextLabel_11.Text = "DisableDisplayNames"
 TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.TextScaled = true
 TextLabel_11.TextSize = 14.000
@@ -688,24 +729,442 @@ TextLabel_11.TextWrapped = true
 UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
 UIGradient_10.Parent = TextLabel_11
 
-fov.Name = "fov"
-fov.Parent = FOV
-fov.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
-fov.Position = UDim2.new(0.615829766, 0, 0.17857106, 0)
-fov.Size = UDim2.new(0, 132, 0, 17)
-fov.Font = Enum.Font.SourceSans
-fov.PlaceholderText = "SetFov"
-fov.Text = ""
-fov.TextColor3 = Color3.fromRGB(255, 255, 255)
-fov.TextSize = 14.000
-fov.TextWrapped = true
+A.Name = "A"
+A.Parent = MAIN
+A.Active = true
+A.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+A.BackgroundTransparency = 1.000
+A.BorderColor3 = Color3.fromRGB(255, 255, 255)
+A.BorderSizePixel = 0
+A.Position = UDim2.new(0.233384654, 0, 0.0390069224, 0)
+A.Size = UDim2.new(0, 387, 0, 236)
+A.Visible = false
+A.CanvasSize = UDim2.new(0, 0, 10, 0)
+A.ScrollBarThickness = 0
 
-UICorner_29.CornerRadius = UDim.new(0, 4)
-UICorner_29.Parent = fov
+search_3.Name = "search"
+search_3.Parent = A
+search_3.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+search_3.BorderSizePixel = 0
+search_3.Size = UDim2.new(0, 376, 0, 25)
+
+UICorner_28.CornerRadius = UDim.new(0, 5)
+UICorner_28.Parent = search_3
+
+SearchText_3.Name = "SearchText"
+SearchText_3.Parent = search_3
+SearchText_3.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+SearchText_3.BorderSizePixel = 0
+SearchText_3.Position = UDim2.new(0.0406763591, 0, 0.239999995, 0)
+SearchText_3.Size = UDim2.new(0, 349, 0, 13)
+SearchText_3.Font = Enum.Font.GothamSemibold
+SearchText_3.PlaceholderText = "Search"
+SearchText_3.Text = ""
+SearchText_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+SearchText_3.TextSize = 13.000
+SearchText_3.TextWrapped = true
+
+UICorner_29.CornerRadius = UDim.new(0, 5)
+UICorner_29.Parent = SearchText_3
+
+UIListLayout_4.Parent = A
+UIListLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_4.Padding = UDim.new(0, 4)
+
+SMG.Name = "SMG"
+SMG.Parent = A
+SMG.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+SMG.Position = UDim2.new(0.211886302, 0, 0.131371498, 0)
+SMG.Size = UDim2.new(0, 376, 0, 24)
+SMG.Font = Enum.Font.SourceSans
+SMG.Text = "smg"
+SMG.TextColor3 = Color3.fromRGB(0, 0, 0)
+SMG.TextSize = 14.000
+SMG.TextTransparency = 1.000
+SMG.TextWrapped = true
+
+UICorner_30.Parent = SMG
+
+TextLabel_12.Parent = SMG
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.0212765951, 0, 0.15683873, 0)
+TextLabel_12.Size = UDim2.new(0, 315, 0, 16)
+TextLabel_12.Font = Enum.Font.GothamBold
+TextLabel_12.Text = "[SMG] - $750"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextScaled = true
+TextLabel_12.TextSize = 14.000
+TextLabel_12.TextWrapped = true
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_11.Parent = TextLabel_12
+
+RPG.Name = "RPG"
+RPG.Parent = A
+RPG.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+RPG.Position = UDim2.new(-0.0232558139, 0, 0.126493454, 0)
+RPG.Size = UDim2.new(0, 376, 0, 24)
+RPG.Font = Enum.Font.SourceSans
+RPG.Text = "rpg"
+RPG.TextColor3 = Color3.fromRGB(0, 0, 0)
+RPG.TextSize = 14.000
+RPG.TextTransparency = 1.000
+RPG.TextWrapped = true
+
+UICorner_31.Parent = RPG
+
+TextLabel_13.Parent = RPG
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.0140806157, 0, 0.15683873, 0)
+TextLabel_13.Size = UDim2.new(0, 335, 0, 16)
+TextLabel_13.Font = Enum.Font.GothamBold
+TextLabel_13.Text = "[RPG] - $6000"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextScaled = true
+TextLabel_13.TextSize = 14.000
+TextLabel_13.TextWrapped = true
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_12.Parent = TextLabel_13
+
+AK47.Name = "AK47"
+AK47.Parent = A
+AK47.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+AK47.Position = UDim2.new(0, 0, 0.12608695, 0)
+AK47.Size = UDim2.new(0, 376, 0, 24)
+AK47.Font = Enum.Font.SourceSans
+AK47.Text = "ak47"
+AK47.TextColor3 = Color3.fromRGB(0, 0, 0)
+AK47.TextSize = 14.000
+AK47.TextTransparency = 1.000
+AK47.TextWrapped = true
+
+UICorner_32.Parent = AK47
+
+TextLabel_14.Parent = AK47
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0, 0, 0.15683873, 0)
+TextLabel_14.Size = UDim2.new(0, 348, 0, 16)
+TextLabel_14.Font = Enum.Font.GothamBold
+TextLabel_14.Text = "[AK47] - $2250"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextScaled = true
+TextLabel_14.TextSize = 14.000
+TextLabel_14.TextWrapped = true
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_13.Parent = TextLabel_14
+
+REV.Name = "REV"
+REV.Parent = A
+REV.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+REV.Position = UDim2.new(0, 0, 0.12608695, 0)
+REV.Size = UDim2.new(0, 376, 0, 24)
+REV.Font = Enum.Font.SourceSans
+REV.Text = "revolver"
+REV.TextColor3 = Color3.fromRGB(0, 0, 0)
+REV.TextSize = 14.000
+REV.TextTransparency = 1.000
+REV.TextWrapped = true
+
+UICorner_33.Parent = REV
+
+TextLabel_15.Parent = REV
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.0212765951, 0, 0.15683873, 0)
+TextLabel_15.Size = UDim2.new(0, 349, 0, 16)
+TextLabel_15.Font = Enum.Font.GothamBold
+TextLabel_15.Text = "[Revolver] - $1300"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextScaled = true
+TextLabel_15.TextSize = 14.000
+TextLabel_15.TextWrapped = true
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_14.Parent = TextLabel_15
+
+DB.Name = "DB"
+DB.Parent = A
+DB.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+DB.Position = UDim2.new(0, 0, 0.12608695, 0)
+DB.Size = UDim2.new(0, 376, 0, 24)
+DB.Font = Enum.Font.SourceSans
+DB.Text = "DoubleBarrel"
+DB.TextColor3 = Color3.fromRGB(0, 0, 0)
+DB.TextSize = 14.000
+DB.TextTransparency = 1.000
+DB.TextWrapped = true
+
+UICorner_34.Parent = DB
+
+TextLabel_16.Parent = DB
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.0212765951, 0, 0.15683873, 0)
+TextLabel_16.Size = UDim2.new(0, 349, 0, 16)
+TextLabel_16.Font = Enum.Font.GothamBold
+TextLabel_16.Text = "[Double-Barrel SG] - $1400"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextScaled = true
+TextLabel_16.TextSize = 14.000
+TextLabel_16.TextWrapped = true
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_15.Parent = TextLabel_16
+
+LMG.Name = "LMG"
+LMG.Parent = A
+LMG.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+LMG.Position = UDim2.new(-0.0232558139, 0, 0.126493454, 0)
+LMG.Size = UDim2.new(0, 376, 0, 24)
+LMG.Font = Enum.Font.SourceSans
+LMG.Text = "lmg"
+LMG.TextColor3 = Color3.fromRGB(0, 0, 0)
+LMG.TextSize = 14.000
+LMG.TextTransparency = 1.000
+LMG.TextWrapped = true
+
+UICorner_35.Parent = LMG
+
+TextLabel_17.Parent = LMG
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.0140806157, 0, 0.15683873, 0)
+TextLabel_17.Size = UDim2.new(0, 335, 0, 16)
+TextLabel_17.Font = Enum.Font.GothamBold
+TextLabel_17.Text = "[Lmg] - $3750"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextScaled = true
+TextLabel_17.TextSize = 14.000
+TextLabel_17.TextWrapped = true
+
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_16.Parent = TextLabel_17
+
+FLAME.Name = "FLAME"
+FLAME.Parent = A
+FLAME.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+FLAME.Position = UDim2.new(-0.0232558139, 0, 0.126493454, 0)
+FLAME.Size = UDim2.new(0, 376, 0, 24)
+FLAME.Font = Enum.Font.SourceSans
+FLAME.Text = "lmg"
+FLAME.TextColor3 = Color3.fromRGB(0, 0, 0)
+FLAME.TextSize = 14.000
+FLAME.TextTransparency = 1.000
+FLAME.TextWrapped = true
+
+UICorner_36.Parent = FLAME
+
+TextLabel_18.Parent = FLAME
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.0140806157, 0, 0.15683873, 0)
+TextLabel_18.Size = UDim2.new(0, 335, 0, 16)
+TextLabel_18.Font = Enum.Font.GothamBold
+TextLabel_18.Text = "[FlameThrower] - $25000"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextScaled = true
+TextLabel_18.TextSize = 14.000
+TextLabel_18.TextWrapped = true
+
+UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_17.Parent = TextLabel_18
+
+DRUM.Name = "DRUM"
+DRUM.Parent = A
+DRUM.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+DRUM.Position = UDim2.new(-0.0232558139, 0, 0.126493454, 0)
+DRUM.Size = UDim2.new(0, 376, 0, 24)
+DRUM.Font = Enum.Font.SourceSans
+DRUM.Text = "drumgun"
+DRUM.TextColor3 = Color3.fromRGB(0, 0, 0)
+DRUM.TextSize = 14.000
+DRUM.TextTransparency = 1.000
+DRUM.TextWrapped = true
+
+UICorner_37.Parent = DRUM
+
+TextLabel_19.Parent = DRUM
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Position = UDim2.new(0.0140806157, 0, 0.15683873, 0)
+TextLabel_19.Size = UDim2.new(0, 335, 0, 16)
+TextLabel_19.Font = Enum.Font.GothamBold
+TextLabel_19.Text = "[DrumGun] - $3000"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextScaled = true
+TextLabel_19.TextSize = 14.000
+TextLabel_19.TextWrapped = true
+
+UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_18.Parent = TextLabel_19
+
+BrownBag.Name = "BrownBag"
+BrownBag.Parent = A
+BrownBag.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+BrownBag.Position = UDim2.new(-0.0232558139, 0, 0.126493454, 0)
+BrownBag.Size = UDim2.new(0, 376, 0, 24)
+BrownBag.Font = Enum.Font.SourceSans
+BrownBag.Text = "brownbag"
+BrownBag.TextColor3 = Color3.fromRGB(0, 0, 0)
+BrownBag.TextSize = 14.000
+BrownBag.TextTransparency = 1.000
+BrownBag.TextWrapped = true
+
+UICorner_38.Parent = BrownBag
+
+TextLabel_20.Parent = BrownBag
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Position = UDim2.new(0.0140806157, 0, 0.15683873, 0)
+TextLabel_20.Size = UDim2.new(0, 335, 0, 16)
+TextLabel_20.Font = Enum.Font.GothamBold
+TextLabel_20.Text = "[BrownBag] - $25"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextScaled = true
+TextLabel_20.TextSize = 14.000
+TextLabel_20.TextWrapped = true
+
+UIGradient_19.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_19.Parent = TextLabel_20
+
+TT.Name = "TT"
+TT.Parent = MAIN
+TT.Active = true
+TT.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+TT.BackgroundTransparency = 1.000
+TT.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TT.BorderSizePixel = 0
+TT.Position = UDim2.new(0.233384654, 0, 0.0390069224, 0)
+TT.Size = UDim2.new(0, 387, 0, 236)
+TT.Visible = false
+TT.CanvasSize = UDim2.new(0, 0, 10, 0)
+TT.ScrollBarThickness = 0
+
+search_4.Name = "search"
+search_4.Parent = TT
+search_4.BackgroundColor3 = Color3.fromRGB(17, 17, 17)
+search_4.BorderSizePixel = 0
+search_4.Size = UDim2.new(0, 376, 0, 25)
+
+UICorner_39.CornerRadius = UDim.new(0, 5)
+UICorner_39.Parent = search_4
+
+SearchText_4.Name = "SearchText"
+SearchText_4.Parent = search_4
+SearchText_4.BackgroundColor3 = Color3.fromRGB(24, 24, 24)
+SearchText_4.BorderSizePixel = 0
+SearchText_4.Position = UDim2.new(0.0406763591, 0, 0.239999995, 0)
+SearchText_4.Size = UDim2.new(0, 349, 0, 13)
+SearchText_4.Font = Enum.Font.GothamSemibold
+SearchText_4.PlaceholderText = "Search"
+SearchText_4.Text = ""
+SearchText_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+SearchText_4.TextSize = 13.000
+SearchText_4.TextWrapped = true
+
+UICorner_40.CornerRadius = UDim.new(0, 5)
+UICorner_40.Parent = SearchText_4
+
+UIListLayout_5.Parent = TT
+UIListLayout_5.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout_5.Padding = UDim.new(0, 4)
+
+BAG.Name = "BAG"
+BAG.Parent = TT
+BAG.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+BAG.Position = UDim2.new(0, 0, 0.365028322, 0)
+BAG.Size = UDim2.new(0, 376, 0, 24)
+BAG.Font = Enum.Font.SourceSans
+BAG.Text = "disableseats"
+BAG.TextColor3 = Color3.fromRGB(0, 0, 0)
+BAG.TextSize = 14.000
+BAG.TextTransparency = 1.000
+BAG.TextWrapped = true
+
+UICorner_41.Parent = BAG
+
+TextLabel_21.Parent = BAG
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.Position = UDim2.new(-0.0106382966, 0, 0.156839997, 0)
+TextLabel_21.Size = UDim2.new(0, 102, 0, 16)
+TextLabel_21.Font = Enum.Font.GothamBold
+TextLabel_21.Text = "BagPlayer"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextScaled = true
+TextLabel_21.TextSize = 14.000
+TextLabel_21.TextWrapped = true
+
+UIGradient_20.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_20.Parent = TextLabel_21
+
+Target_2.Name = "Target"
+Target_2.Parent = BAG
+Target_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Target_2.Position = UDim2.new(0.615829766, 0, 0.17857106, 0)
+Target_2.Size = UDim2.new(0, 132, 0, 17)
+Target_2.Font = Enum.Font.SourceSans
+Target_2.PlaceholderText = "Target"
+Target_2.Text = ""
+Target_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target_2.TextSize = 14.000
+Target_2.TextWrapped = true
+
+UICorner_42.CornerRadius = UDim.new(0, 4)
+UICorner_42.Parent = Target_2
+
+GoTo.Name = "GoTo"
+GoTo.Parent = TT
+GoTo.BackgroundColor3 = Color3.fromRGB(13, 13, 13)
+GoTo.Position = UDim2.new(0, 0, 0.365028322, 0)
+GoTo.Size = UDim2.new(0, 376, 0, 24)
+GoTo.Font = Enum.Font.SourceSans
+GoTo.Text = "goto"
+GoTo.TextColor3 = Color3.fromRGB(0, 0, 0)
+GoTo.TextSize = 14.000
+GoTo.TextTransparency = 1.000
+GoTo.TextWrapped = true
+
+UICorner_43.Parent = GoTo
+
+TextLabel_22.Parent = GoTo
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.Position = UDim2.new(0.0146961613, 0, 0.15683873, 0)
+TextLabel_22.Size = UDim2.new(0, 42, 0, 16)
+TextLabel_22.Font = Enum.Font.GothamBold
+TextLabel_22.Text = "Goto"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextScaled = true
+TextLabel_22.TextSize = 14.000
+TextLabel_22.TextWrapped = true
+
+UIGradient_21.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(55, 255, 93)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(71, 71, 71))}
+UIGradient_21.Parent = TextLabel_22
+
+Target_3.Name = "Target"
+Target_3.Parent = GoTo
+Target_3.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Target_3.Position = UDim2.new(0.615829766, 0, 0.17857106, 0)
+Target_3.Size = UDim2.new(0, 132, 0, 17)
+Target_3.Font = Enum.Font.SourceSans
+Target_3.PlaceholderText = "Target"
+Target_3.Text = ""
+Target_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Target_3.TextSize = 14.000
+Target_3.TextWrapped = true
+
+UICorner_44.CornerRadius = UDim.new(0, 4)
+UICorner_44.Parent = Target_3
 
 -- Scripts:
 
-local function LUSY_fake_script() -- TextButton.LocalScript 
+local function WKIFJH_fake_script() -- TextButton.LocalScript 
 	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -713,15 +1172,12 @@ local function LUSY_fake_script() -- TextButton.LocalScript
 		script.Parent.Parent.Parent.C.Visible = false
 		script.Parent.Parent.Parent.T.Visible = false
 		script.Parent.Parent.Parent.A.Visible = false
-		script.Parent.Parent.Parent.TP.Visible = false
-		script.Parent.Parent.Parent.U.Visible = false
-		script.Parent.Parent.Parent.S.Visible = false
-		script.Parent.Parent.Parent.AF.Visible = false
+		script.Parent.Parent.Parent.TT.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(LUSY_fake_script)()
-local function YQLJX_fake_script() -- TextButton_2.LocalScript 
+coroutine.wrap(WKIFJH_fake_script)()
+local function FHCNLI_fake_script() -- TextButton_2.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -729,15 +1185,12 @@ local function YQLJX_fake_script() -- TextButton_2.LocalScript
 		script.Parent.Parent.Parent.C.Visible = true
 		script.Parent.Parent.Parent.T.Visible = false
 		script.Parent.Parent.Parent.A.Visible = false
-		script.Parent.Parent.Parent.TP.Visible = false
-		script.Parent.Parent.Parent.U.Visible = false
-		script.Parent.Parent.Parent.S.Visible = false
-		script.Parent.Parent.Parent.AF.Visible = false
+		script.Parent.Parent.Parent.TT.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(YQLJX_fake_script)()
-local function ZQGJNV_fake_script() -- TextButton_3.LocalScript 
+coroutine.wrap(FHCNLI_fake_script)()
+local function VYJPTHJ_fake_script() -- TextButton_3.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -745,15 +1198,12 @@ local function ZQGJNV_fake_script() -- TextButton_3.LocalScript
 		script.Parent.Parent.Parent.C.Visible = false
 		script.Parent.Parent.Parent.T.Visible = true
 		script.Parent.Parent.Parent.A.Visible = false
-		script.Parent.Parent.Parent.TP.Visible = false
-		script.Parent.Parent.Parent.U.Visible = false
-		script.Parent.Parent.Parent.S.Visible = false
-		script.Parent.Parent.Parent.AF.Visible = false
+		script.Parent.Parent.Parent.TT.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(ZQGJNV_fake_script)()
-local function XHFKXV_fake_script() -- TextButton_4.LocalScript 
+coroutine.wrap(VYJPTHJ_fake_script)()
+local function JUVRI_fake_script() -- TextButton_4.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -761,31 +1211,12 @@ local function XHFKXV_fake_script() -- TextButton_4.LocalScript
 		script.Parent.Parent.Parent.C.Visible = false
 		script.Parent.Parent.Parent.T.Visible = false
 		script.Parent.Parent.Parent.A.Visible = true
-		script.Parent.Parent.Parent.TP.Visible = false
-		script.Parent.Parent.Parent.U.Visible = false
-		script.Parent.Parent.Parent.S.Visible = false
-		script.Parent.Parent.Parent.AF.Visible = false
+		script.Parent.Parent.Parent.TT.Visible = false
 		wait(0.1)
 	end)
 end
-coroutine.wrap(XHFKXV_fake_script)()
-local function JDKVQ_fake_script() -- TextButton_5.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_5)
-
-	script.Parent.MouseButton1Click:connect(function()
-		script.Parent.Parent.Parent.H.Visible = false
-		script.Parent.Parent.Parent.C.Visible = false
-		script.Parent.Parent.Parent.T.Visible = false
-		script.Parent.Parent.Parent.A.Visible = false
-		script.Parent.Parent.Parent.TP.Visible = true
-		script.Parent.Parent.Parent.U.Visible = false
-		script.Parent.Parent.Parent.S.Visible = false
-		script.Parent.Parent.Parent.AF.Visible = false
-		wait(0.1)
-	end)
-end
-coroutine.wrap(JDKVQ_fake_script)()
-local function VDWDBHP_fake_script() -- TextButton_6.LocalScript 
+coroutine.wrap(JUVRI_fake_script)()
+local function YDODR_fake_script() -- TextButton_6.LocalScript 
 	local script = Instance.new('LocalScript', TextButton_6)
 
 	script.Parent.MouseButton1Click:connect(function()
@@ -793,50 +1224,15 @@ local function VDWDBHP_fake_script() -- TextButton_6.LocalScript
 		script.Parent.Parent.Parent.C.Visible = false
 		script.Parent.Parent.Parent.T.Visible = false
 		script.Parent.Parent.Parent.A.Visible = false
-		script.Parent.Parent.Parent.TP.Visible = false
-		script.Parent.Parent.Parent.U.Visible = true
-		script.Parent.Parent.Parent.S.Visible = false
-		script.Parent.Parent.Parent.AF.Visible = false
+		script.Parent.Parent.Parent.TT.Visible = true
 		wait(0.1)
 	end)
 end
-coroutine.wrap(VDWDBHP_fake_script)()
-local function TRKSE_fake_script() -- TextButton_7.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_7)
-
-	script.Parent.MouseButton1Click:connect(function()
-		script.Parent.Parent.Parent.H.Visible = false
-		script.Parent.Parent.Parent.C.Visible = false
-		script.Parent.Parent.Parent.T.Visible = false
-		script.Parent.Parent.Parent.A.Visible = false
-		script.Parent.Parent.Parent.TP.Visible = false
-		script.Parent.Parent.Parent.U.Visible = false
-		script.Parent.Parent.Parent.S.Visible = true
-		script.Parent.Parent.Parent.AF.Visible = false
-		wait(0.1)
-	end)
-end
-coroutine.wrap(TRKSE_fake_script)()
-local function WUUGV_fake_script() -- TextButton_8.LocalScript 
-	local script = Instance.new('LocalScript', TextButton_8)
-
-	script.Parent.MouseButton1Click:connect(function()
-		script.Parent.Parent.Parent.H.Visible = false
-		script.Parent.Parent.Parent.C.Visible = false
-		script.Parent.Parent.Parent.T.Visible = false
-		script.Parent.Parent.Parent.A.Visible = false
-		script.Parent.Parent.Parent.TP.Visible = false
-		script.Parent.Parent.Parent.U.Visible = false
-		script.Parent.Parent.Parent.S.Visible = false
-		script.Parent.Parent.Parent.AF.Visible = true
-		wait(0.1)
-	end)
-end
-coroutine.wrap(WUUGV_fake_script)()
-local function WWJR_fake_script() -- search.LocalScript 
+coroutine.wrap(YDODR_fake_script)()
+local function NSDEVNF_fake_script() -- search.LocalScript 
 	local script = Instance.new('LocalScript', search)
 
-	local scroll = script.Parent.Parent.Parent.C-- CHANGE THIS TO YOUR SCROLLING FRAME
+	local scroll = script.Parent.Parent.Parent.T-- CHANGE THIS TO YOUR SCROLLING FRAME
 	local textBox = script.Parent.SearchText -- CHANGE THIS TO YOUR TEXT BOX
 	
 	textBox.Changed:Connect(function() -- when the text is changed
@@ -864,8 +1260,8 @@ local function WWJR_fake_script() -- search.LocalScript
 	end)
 	
 end
-coroutine.wrap(WWJR_fake_script)()
-local function FDRGX_fake_script() -- AntiStomp.LocalScript 
+coroutine.wrap(NSDEVNF_fake_script)()
+local function KCTOYXD_fake_script() -- AntiStomp.LocalScript 
 	local script = Instance.new('LocalScript', AntiStomp)
 
 	local stomp = pcall(function() if tostring(game.PlaceId) == "2788229376" then local corepackages = game:GetService"CorePackages" local localplayer = game:GetService"Players".LocalPlayer local run = game:GetService"RunService" run:BindToRenderStep("rrrrrrrrrrr",2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 30 then localplayer.Character.Humanoid:UnequipTools() localplayer.Character.Humanoid:Destroy() workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then ReplicatedStorage:FireServer("Stomp") end end) end) 
@@ -894,8 +1290,8 @@ local function FDRGX_fake_script() -- AntiStomp.LocalScript
 		end
 	end)
 end
-coroutine.wrap(FDRGX_fake_script)()
-local function AWJZLBA_fake_script() -- View.LocalScript 
+coroutine.wrap(KCTOYXD_fake_script)()
+local function UIHOQK_fake_script() -- View.LocalScript 
 	local script = Instance.new('LocalScript', View)
 
 	local function ShrinkName()
@@ -946,8 +1342,8 @@ local function AWJZLBA_fake_script() -- View.LocalScript
 		end
 	end)
 end
-coroutine.wrap(AWJZLBA_fake_script)()
-local function TPNS_fake_script() -- MAIN.Drag 
+coroutine.wrap(UIHOQK_fake_script)()
+local function RHWID_fake_script() -- MAIN.Drag 
 	local script = Instance.new('LocalScript', MAIN)
 
 	local UIS = game:GetService('UserInputService')
@@ -986,15 +1382,15 @@ local function TPNS_fake_script() -- MAIN.Drag
 	end)
 	
 end
-coroutine.wrap(TPNS_fake_script)()
-local function LEQT_fake_script() -- TextLabel_4.LocalScript 
+coroutine.wrap(RHWID_fake_script)()
+local function SCCKG_fake_script() -- TextLabel_4.LocalScript 
 	local script = Instance.new('LocalScript', TextLabel_4)
 
 	script.Parent.Text = game.Players.LocalPlayer.Name
 	
 end
-coroutine.wrap(LEQT_fake_script)()
-local function WREACHC_fake_script() -- ImageLabel.LocalScript 
+coroutine.wrap(SCCKG_fake_script)()
+local function GCXN_fake_script() -- ImageLabel.LocalScript 
 	local script = Instance.new('LocalScript', ImageLabel)
 
 	local Players = game:GetService("Players")
@@ -1010,8 +1406,8 @@ local function WREACHC_fake_script() -- ImageLabel.LocalScript
 	imageLabel.Image = content
 	
 end
-coroutine.wrap(WREACHC_fake_script)()
-local function CFWUDQE_fake_script() -- MAIN.LocalScript 
+coroutine.wrap(GCXN_fake_script)()
+local function AYMMRXH_fake_script() -- MAIN.LocalScript 
 	local script = Instance.new('LocalScript', MAIN)
 
 	game.StarterGui:SetCore("SendNotification",{
@@ -1021,8 +1417,8 @@ local function CFWUDQE_fake_script() -- MAIN.LocalScript
 		Duration = 2
 	})
 end
-coroutine.wrap(CFWUDQE_fake_script)()
-local function ATFJ_fake_script() -- search_2.LocalScript 
+coroutine.wrap(AYMMRXH_fake_script)()
+local function DIBVWW_fake_script() -- search_2.LocalScript 
 	local script = Instance.new('LocalScript', search_2)
 
 	local scroll = script.Parent.Parent.Parent.C-- CHANGE THIS TO YOUR SCROLLING FRAME
@@ -1053,105 +1449,125 @@ local function ATFJ_fake_script() -- search_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(ATFJ_fake_script)()
-local function UHGZF_fake_script() -- Fly.LocalScript 
+coroutine.wrap(DIBVWW_fake_script)()
+local function TEMYJI_fake_script() -- Fly.LocalScript 
 	local script = Instance.new('LocalScript', Fly)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification",{
-			Title = "PERKS",
-			Text = "F to fly",
-			icon = "rbxassetid://7072708278",
-			Duration = 2
-		})
-		lplayer = game:GetService("Players").LocalPlayer
-		local Mouse = lplayer:GetMouse()
-		flying = false
-		local potato = 1
-		Mouse.KeyDown:connect(function(key)
-			if key == "f" then
-				if potato == 1 then
-					repeat wait() until lplayer and lplayer.Character and lplayer.Character:FindFirstChild('HumanoidRootPart') and lplayer.Character:FindFirstChild('Humanoid')
-					repeat wait() until Mouse
-					speedfly = 1
+		local plr = game.Players.LocalPlayer
+		local mouse = plr:GetMouse()
+		local Humanoid = game.Players.LocalPlayer.Character.Humanoid or game.Players.LocalPlayer.Character.humanoid  
 	
-					local T = lplayer.Character.HumanoidRootPart
-					local CONTROL = {F = 0, B = 0, L = 0, R = 0}
-					local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-					local SPEED = speedget
+		localplayer = plr
 	
-					local function fly()
-						flying = true
-						local BG = Instance.new('BodyGyro', T)
-						local BV = Instance.new('BodyVelocity', T)
-						BG.P = 9e4
-						BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
-						BG.cframe = T.CFrame
-						BV.velocity = Vector3.new(0, 0.1, 0)
-						BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
-						spawn(function()
-							repeat wait()
-								lplayer.Character.Humanoid.PlatformStand = true
-								if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
-									SPEED = script.Parent.speed.Text
-									if script.Parent.speed.Text == "" then
-										SPEED = 100
-									end
-								elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
-									SPEED = 0
-								end
-								if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
-									BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
-									lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
-								elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
-									BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
-								else
-									BV.velocity = Vector3.new(0, 0.1, 0)
-								end
-								BG.cframe = workspace.CurrentCamera.CoordinateFrame
-							until not flying
-							CONTROL = {F = 0, B = 0, L = 0, R = 0}
-							lCONTROL = {F = 0, B = 0, L = 0, R = 0}
-							SPEED = 0
-							BG:destroy()
-							BV:destroy()
-							lplayer.Character.Humanoid.PlatformStand = false
-						end)
+		if workspace:FindFirstChild("Core") then
+			workspace.Core:Destroy()
+		end
+	
+		local Core = Instance.new("Part")
+		Core.Name = "Core"
+		Core.Size = Vector3.new(0.05, 0.05, 0.05)
+	
+		spawn(function()
+			Core.Parent = workspace
+			local Weld = Instance.new("Weld", Core)
+			Weld.Part0 = Core
+			Weld.Part1 = localplayer.Character.LowerTorso
+			Weld.C0 = CFrame.new(0, 0, 0)
+		end)
+	
+		workspace:WaitForChild("Core")
+	
+		local torso = workspace.Core
+		flying = true
+		local speed=10000000
+		local keys={a=false,d=false,w=false,s=false} 
+		local e1
+		local e2
+		local function start()
+			local pos = Instance.new("BodyPosition",torso)
+			local gyro = Instance.new("BodyGyro",torso)
+			pos.Name="EPIXPOS"
+			pos.maxForce = Vector3.new(math.huge, math.huge, math.huge)
+			pos.position = torso.Position
+			gyro.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+			gyro.cframe = torso.CFrame
+			repeat
+				wait()
+				Humanoid.PlatformStand=true
+				local new=gyro.cframe - gyro.cframe.p + pos.position
+				if not keys.w and not keys.s and not keys.a and not keys.d then
+					speed=script.Parent.speed.Text
+					if script.Parent.speed.Text == "" then
+						speed=10
 					end
-					Mouse.KeyDown:connect(function(KEY)
-						if KEY:lower() == 'w' then
-							CONTROL.F = speedfly
-						elseif KEY:lower() == 's' then
-							CONTROL.B = -speedfly
-						elseif KEY:lower() == 'a' then
-							CONTROL.L = -speedfly
-						elseif KEY:lower() == 'd' then
-							CONTROL.R = speedfly
-						end
-					end)
-					Mouse.KeyUp:connect(function(KEY)
-						if KEY:lower() == 'w' then
-							CONTROL.F = 0
-						elseif KEY:lower() == 's' then
-							CONTROL.B = 0
-						elseif KEY:lower() == 'a' then
-							CONTROL.L = 0
-						elseif KEY:lower() == 'd' then
-							CONTROL.R = 0
-						end
-					end)
-					potato = 0
-					fly()
-				else 
-					flying = false
-					lplayer.Character.Humanoid.PlatformStand = false
-					potato = 1
-				end end end)
+				end
+				if keys.w then 
+					new = new + workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+					speed=speed+0
+				end
+				if keys.s then 
+					new = new - workspace.CurrentCamera.CoordinateFrame.lookVector * speed
+					speed=speed+0
+				end
+				if keys.d then 
+					new = new * CFrame.new(speed,0,0)
+					speed=speed+0
+				end
+				if keys.a then 
+					new = new * CFrame.new(-speed,0,0)
+					speed=speed+0
+				end
+				pos.position=new.p
+				if keys.w then
+					gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(-math.rad(speed*0),0,0)
+				elseif keys.s then
+					gyro.cframe = workspace.CurrentCamera.CoordinateFrame*CFrame.Angles(math.rad(speed*0),0,0)
+				else
+					gyro.cframe = workspace.CurrentCamera.CoordinateFrame
+				end
+			until flying == false
+			if gyro then gyro:Destroy() end
+			if pos then pos:Destroy() end
+			flying=false
+			Humanoid.PlatformStand=false
+		end
+		e1=mouse.KeyDown:connect(function(key)
+			if not torso or not torso.Parent then flying=false e1:disconnect() e2:disconnect() return end
+			if key=="w" then
+				keys.w=true
+			elseif key=="s" then
+				keys.s=true
+			elseif key=="a" then
+				keys.a=true
+			elseif key=="d" then
+				keys.d=true
+			elseif key=="x" then
+				if flying==true then
+					flying=false
+				else
+					flying=true
+					start()
+				end
+			end
+		end)
+		e2=mouse.KeyUp:connect(function(key)
+			if key=="w" then
+				keys.w=false
+			elseif key=="s" then
+				keys.s=false
+			elseif key=="a" then
+				keys.a=false
+			elseif key=="d" then
+				keys.d=false
+			end
+		end)
+		start()
 	end)
 	
 end
-coroutine.wrap(UHGZF_fake_script)()
-local function ESWGD_fake_script() -- CTP.LocalScript 
+coroutine.wrap(TEMYJI_fake_script)()
+local function JMWE_fake_script() -- CTP.LocalScript 
 	local script = Instance.new('LocalScript', CTP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1178,8 +1594,8 @@ local function ESWGD_fake_script() -- CTP.LocalScript
 	end)
 	
 end
-coroutine.wrap(ESWGD_fake_script)()
-local function JFFYS_fake_script() -- INFJUMP.LocalScript 
+coroutine.wrap(JMWE_fake_script)()
+local function NVCSRWK_fake_script() -- INFJUMP.LocalScript 
 	local script = Instance.new('LocalScript', INFJUMP)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -1204,8 +1620,263 @@ local function JFFYS_fake_script() -- INFJUMP.LocalScript
 	end)
 	
 end
-coroutine.wrap(JFFYS_fake_script)()
-local function NNAW_fake_script() -- GoTo.LocalScript 
+coroutine.wrap(NVCSRWK_fake_script)()
+local function PXOZGJ_fake_script() -- SEATS.LocalScript 
+	local script = Instance.new('LocalScript', SEATS)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		for i,v in ipairs(game.workspace:GetDescendants()) do 
+	
+			if v:IsA("Seat") then 
+	
+				v.Disabled = true 
+	
+			end 
+	
+		end 
+	
+	end)
+	
+end
+coroutine.wrap(PXOZGJ_fake_script)()
+local function HVBB_fake_script() -- NoSlow.LocalScript 
+	local script = Instance.new('LocalScript', NoSlow)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		LP.Character.BodyEffects.Grabbed:Destroy()
+		LP.Character.BodyEffects["K.O"]:Destroy()
+		local g = Instance.new("ObjectValue",LP.Character.BodyEffects)
+		g.Name = "Grabbed"
+		local b = Instance.new("BoolValue",LP.Character.BodyEffects)
+		b.Name = "K.O"
+	end)
+	
+end
+coroutine.wrap(HVBB_fake_script)()
+local function HKLTWJ_fake_script() -- DisplayNames.LocalScript 
+	local script = Instance.new('LocalScript', DisplayNames)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.PlayerAdded:Connect(function(Player)
+			Player.CharacterAdded:Connect(function(Character)
+				if Character ~= nil then
+					local Humanoid = Character:FindFirstChild("Humanoid")
+					if Humanoid ~= nil then
+						Humanoid.DisplayName = ""
+					end
+				end
+			end)
+		end)
+	end)
+	
+end
+coroutine.wrap(HKLTWJ_fake_script)()
+local function BJAWSV_fake_script() -- MAIN.LocalScript 
+	local script = Instance.new('LocalScript', MAIN)
+
+	print("Hello world!")
+	
+end
+coroutine.wrap(BJAWSV_fake_script)()
+local function FTSYJPZ_fake_script() -- search_3.LocalScript 
+	local script = Instance.new('LocalScript', search_3)
+
+	local scroll = script.Parent.Parent.Parent.A-- CHANGE THIS TO YOUR SCROLLING FRAME
+	local textBox = script.Parent.SearchText -- CHANGE THIS TO YOUR TEXT BOX
+	
+	textBox.Changed:Connect(function() -- when the text is changed
+		local text = textBox.Text:lower() -- lowercase search bar text
+		if text ~= "" then -- if it has text
+			local buttons = scroll:GetDescendants() -- all of the buttons
+			for _, button in pairs(buttons) do -- loops through the buttons
+				if button:IsA("TextButton") then -- if it's a button
+					local buttonText = button.Text:lower() -- lowercase button text
+					if string.find(buttonText, text) then -- if search bar text is found in the button's text
+						button.Visible = true -- shows button
+					else -- otherwise
+						button.Visible = false -- hides button
+					end
+				end
+			end
+		else -- if it's empty
+			local buttons = scroll:GetDescendants() -- all buttons
+			for _, button in pairs(buttons) do -- loops through buttons
+				if button:IsA("TextButton") then -- if it's a button
+					button.Visible = true -- shows button
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(FTSYJPZ_fake_script)()
+local function PGMFWS_fake_script() -- SMG.LocalScript 
+	local script = Instance.new('LocalScript', SMG)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[SMG] - $750'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[SMG] - $750'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[SMG]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(PGMFWS_fake_script)()
+local function LMATIB_fake_script() -- RPG.LocalScript 
+	local script = Instance.new('LocalScript', RPG)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[RPG] - $6000'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[RPG] - $6000'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[RPG]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(LMATIB_fake_script)()
+local function EHLHN_fake_script() -- AK47.LocalScript 
+	local script = Instance.new('LocalScript', AK47)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[AK47] - $2250'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[AK47] - $2250'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[AK47]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(EHLHN_fake_script)()
+local function TBXUMY_fake_script() -- REV.LocalScript 
+	local script = Instance.new('LocalScript', REV)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[Revolver] - $1300'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[Revolver] - $1300'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[Revolver]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(TBXUMY_fake_script)()
+local function MGJQ_fake_script() -- DB.LocalScript 
+	local script = Instance.new('LocalScript', DB)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1400'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[Double-Barrel SG] - $1400'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[Double-Barrel SG]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(MGJQ_fake_script)()
+local function FIKOM_fake_script() -- LMG.LocalScript 
+	local script = Instance.new('LocalScript', LMG)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[LMG] - $1400'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[LMG] - $1400'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[LMG]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(FIKOM_fake_script)()
+local function RYITK_fake_script() -- FLAME.LocalScript 
+	local script = Instance.new('LocalScript', FLAME)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[FlameThrower] - $25000'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[FlameThrower] - $25000'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[FlameThrower]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(RYITK_fake_script)()
+local function UCZJ_fake_script() -- DRUM.LocalScript 
+	local script = Instance.new('LocalScript', DRUM)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[DrumGun] - $3000'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[DrumGun] - $3000'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[DrumGun]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(UCZJ_fake_script)()
+local function UIDVGPJ_fake_script() -- BrownBag.LocalScript 
+	local script = Instance.new('LocalScript', BrownBag)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[BrownBag] - $25'].Head.CFrame
+		wait(.30)
+		fireclickdetector(game.Workspace.Ignored.Shop['[BrownBag] - $25'].ClickDetector)
+		game.Players.LocalPlayer.Backpack:WaitForChild("[BrownBag]").Parent = game.Players.LocalPlayer.Character
+	end)
+end
+coroutine.wrap(UIDVGPJ_fake_script)()
+local function BZKDM_fake_script() -- search_4.LocalScript 
+	local script = Instance.new('LocalScript', search_4)
+
+	local scroll = script.Parent.Parent.Parent.TT-- CHANGE THIS TO YOUR SCROLLING FRAME
+	local textBox = script.Parent.SearchText -- CHANGE THIS TO YOUR TEXT BOX
+	
+	textBox.Changed:Connect(function() -- when the text is changed
+		local text = textBox.Text:lower() -- lowercase search bar text
+		if text ~= "" then -- if it has text
+			local buttons = scroll:GetDescendants() -- all of the buttons
+			for _, button in pairs(buttons) do -- loops through the buttons
+				if button:IsA("TextButton") then -- if it's a button
+					local buttonText = button.Text:lower() -- lowercase button text
+					if string.find(buttonText, text) then -- if search bar text is found in the button's text
+						button.Visible = true -- shows button
+					else -- otherwise
+						button.Visible = false -- hides button
+					end
+				end
+			end
+		else -- if it's empty
+			local buttons = scroll:GetDescendants() -- all buttons
+			for _, button in pairs(buttons) do -- loops through buttons
+				if button:IsA("TextButton") then -- if it's a button
+					button.Visible = true -- shows button
+				end
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(BZKDM_fake_script)()
+local function DYAYB_fake_script() -- BAG.LocalScript 
+	local script = Instance.new('LocalScript', BAG)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local TargetPlr = script.Parent.Target.Text
+		function getRoot(char)
+			local rootPart = char:FindFirstChild('HumanoidRootPart') or char:FindFirstChild('Torso') or char:FindFirstChild('UpperTorso')
+			return rootPart
+		end
+	
+		if TargetPlr and game.Players[TargetPlr].Character.BodyEffects['K.O'].Value == false then
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.Ignored.Shop['[BrownBag] - $25'].Head.CFrame
+			wait(.30)
+			fireclickdetector(game.Workspace.Ignored.Shop['[BrownBag] - $25'].ClickDetector)
+			game.Players.LocalPlayer.Backpack:WaitForChild("[BrownBag]").Parent = game.Players.LocalPlayer.Character
+			wait(.5)
+			repeat
+				pcall(function()
+					wait()
+					getRoot(game.Players[TargetPlr].Character).CFrame = getRoot(game.Players.LocalPlayer.Character).CFrame + Vector3.new(1,3,0)
+					game.Players.LocalPlayer.Character["[BrownBag]"]:Activate()
+				end)
+			until game.Players[TargetPlr].Character:FindFirstChild("Christmas_Sock")
+		elseif game.Players[TargetPlr].Character.BodyEffects['K.O'].Value == false then
+			game.StarterGui:SetCore("SendNotification",{
+				Title = "PERKS",
+				Text = "PlayerAlreadyKnoked",
+				icon = "rbxassetid://7072708278",
+				Duration = 8
+			})
+		end
+	end)
+	
+end
+coroutine.wrap(DYAYB_fake_script)()
+local function YYWSP_fake_script() -- GoTo.LocalScript 
 	local script = Instance.new('LocalScript', GoTo)
 
 	local function ShrinkName()
@@ -1236,47 +1907,4 @@ local function NNAW_fake_script() -- GoTo.LocalScript
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[TargetPlr].Character.HumanoidRootPart.CFrame 
 	end)
 end
-coroutine.wrap(NNAW_fake_script)()
-local function TIJXBT_fake_script() -- SEATS.LocalScript 
-	local script = Instance.new('LocalScript', SEATS)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		for i,v in ipairs(game.workspace:GetDescendants()) do 
-	
-			if v:IsA("Seat") then 
-	
-				v.Disabled = true 
-	
-			end 
-	
-		end 
-	
-	end)
-	
-end
-coroutine.wrap(TIJXBT_fake_script)()
-local function SMTWYZC_fake_script() -- FOV.LocalScript 
-	local script = Instance.new('LocalScript', FOV)
-
-	local Camera = workspace:FindFirstChildOfClass("Camera")
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		game.StarterGui:SetCore("SendNotification",{
-			Title = "PERKS",
-			Text = "FOV Set",
-			icon = "rbxassetid://7072708278",
-			Duration = 2
-		})
-		Camera.FieldOfView = script.Parent.fov.Text
-	end)
-	
-	
-end
-coroutine.wrap(SMTWYZC_fake_script)()
-local function SPMGP_fake_script() -- MAIN.LocalScript 
-	local script = Instance.new('LocalScript', MAIN)
-
-	print("Hello world!")
-	
-end
-coroutine.wrap(SPMGP_fake_script)()
+coroutine.wrap(YYWSP_fake_script)()
